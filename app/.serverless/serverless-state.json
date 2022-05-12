@@ -219,7 +219,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/app/dev/1652341649770-2022-05-12T07:47:29.770Z/app.zip"
+                "S3Key": "serverless/app/dev/1652342640682-2022-05-12T08:04:00.682Z/app.zip"
               },
               "Handler": "s_api.handler",
               "Runtime": "nodejs14.x",
@@ -237,14 +237,14 @@
               "ApiLogGroup"
             ]
           },
-          "ApiLambdaVersionpyJ5n6evna7wgMS2HkNrhSXuVmw18I6hbXOE2aGeogU": {
+          "ApiLambdaVersion6tKpr0xu4sls7oRNY0ojtIPFLBLoCOr094YkhnEs": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "ApiLambdaFunction"
               },
-              "CodeSha256": "Miyqn3p1gPt3cP2wyBNhyfcXDhgYrGNAGgxUK3jMebo="
+              "CodeSha256": "/hz/SuM8hMnJtnP8c6gVlrpxYKmZZhoIlEIs8XeerO4="
             }
           },
           "HttpApi": {
@@ -399,7 +399,7 @@
           "ApiLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "ApiLambdaVersionpyJ5n6evna7wgMS2HkNrhSXuVmw18I6hbXOE2aGeogU"
+              "Ref": "ApiLambdaVersion6tKpr0xu4sls7oRNY0ojtIPFLBLoCOr094YkhnEs"
             },
             "Export": {
               "Name": "sls-app-dev-ApiLambdaFunctionQualifiedArn"
@@ -546,7 +546,7 @@
         "timeout": 6,
         "runtime": "nodejs14.x",
         "vpc": {},
-        "versionLogicalId": "ApiLambdaVersionpyJ5n6evna7wgMS2HkNrhSXuVmw18I6hbXOE2aGeogU"
+        "versionLogicalId": "ApiLambdaVersion6tKpr0xu4sls7oRNY0ojtIPFLBLoCOr094YkhnEs"
       }
     },
     "configValidationMode": "warn",
@@ -573,7 +573,7 @@
     "artifact": "/app/src/.serverless/app.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/app/dev/1652341649770-2022-05-12T07:47:29.770Z",
+    "artifactDirectoryName": "serverless/app/dev/1652342640682-2022-05-12T08:04:00.682Z",
     "artifact": "app.zip"
   }
 }
